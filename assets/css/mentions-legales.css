@@ -323,4 +323,8 @@ color: #676a6c;
     .claim-right {
         margin-top: -16px;
     }
+
+    .pages {
+        width: 80%;
+    }
 }
