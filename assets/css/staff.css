@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*font-family     : 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mulish&display=swap');
+/*font-family     : 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+/*font-family     : 'Cuprum', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=El+Messiri&display=swap');
+/*font-family     : 'Cuprum', sans-serif;
+font-family       : 'El Messiri', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Zen+Kurenaido&display=swap');
+/*font-family     : 'PT Sans Narrow', sans-serif;
+font-family       : 'Zen Kurenaido', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+/*font-family     : 'Shippori Antique', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*font-family     : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@0,100;1,100&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@200&family=Poppins:wght@700&display=swap');
+/*font-family     : 'Acme', sans-serif;
+font-family       : 'Barlow', sans-serif;
+font-family       : 'Montserrat', sans-serif;
+font-family       : 'Montserrat Alternates', sans-serif;
+font-family       : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+/*font-family: 'Exo 2', sans-serif;*/
+
+body {
+    background     : #191c2d;
+    color          : #000;
+    text-decoration: none;
+    margin         : 0;
+    padding        : 0;
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/********************début Scrollbar****************/
+
+.scrollbar {
+    position  : absolute;
+    top       : 0px;
+    right     : 0;
+    height    : calc(100vh - 0px);
+    width     : 100%;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    text-align: center;
+    width     : 500px;
+    margin    : auto;
+}
+
+#scrollp::-webkit-scrollbar-track {
+    background-color: #1d1d1d00;
+}
+
+#scrollp::-webkit-scrollbar {
+    width           : 1px;
+    background-color: #1d1d1d00;
+}
+
+#scrollp::-webkit-scrollbar-thumb {
+    background-color: #404fef;
+}
+
+/********************fin Scrollbar****************/
+
+.staff {
+    height: auto;
+    background: #191d2e;
+    font-family: poppins,sans-serif;
+}
+
+.staff h3 {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.staff h3::before {
+    content: '';
+    width: 105px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.staff .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.staff-player {
+    display: flex;
+    padding: 5px;
+    width: 200px;
+    background: #191d2e;
+    box-shadow: rgba(0, 0, 0, 0.514) 0px 0.5px 10px 0px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.staff-player .info-staff {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-staff .name-staff {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    padding: 2.5px;
+    border-radius: 10px;
+}
+
+.info-staff .role-staff {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+}
+.info-staff .admin {
+    color: #ff2828;
+    background: #00000065;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-staff .resp {
+    color: #ffaaaa;
+    background: #00000065;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-staff .modod {
+    color: #3c3cff;
+    background: #00000065;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
