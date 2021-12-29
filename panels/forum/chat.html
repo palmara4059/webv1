@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Hyderium - PvP/Factions</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="../.././assets/css/chat.css" rel="stylesheet" />
+    <script src="../.././assets/js/discord-api.js"></script>
+    <link rel="icon" type="image/png" href="../.././assets/img/hyderium.png">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="section header">
+        <div class="header">
+            <div class="container">
+                <div class="icon">
+                    <img src="../.././assets/img/hyderium.png" alt="">
+                    <span>Hyderium</span>
+                </div>
+            </div>
+            <div class="container-mobile">
+                <div class="icon">
+                    <img src="../.././assets/img/hyderium.png" alt="">
+                    <span>Hyderium</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section forum">
+        <div id="chat">
+            <div class="scrollbar" id="scrollp">
+                <ul id="messages">
+                </ul>
+            </div>
+            <form id="send-message">
+                <textarea id="username" required></textarea>
+                <textarea id="chat-txt" required></textarea>
+                <button id="chat-btn" type="submit"><i class="fad fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="../.././assets/js/firebase.js"></script>
+    <script src="../.././assets/js/welcome.js"></script>
+</body>
+</html>
+

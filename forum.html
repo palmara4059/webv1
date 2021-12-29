@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Hyderium - PvP/Factions</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="./assets/css/forum.css" rel="stylesheet" />
+    <script src="./assets/js/discord-api.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/hyderium.png">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scrollbar" id="scrollp">
+        <div class="section header">
+            <div class="header">
+                <div class="container">
+                    <div class="icon">
+                        <img src="./assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <ul>
+                        <li><a href="./accueil">Accueil</a></li>
+                        <li><a href="./news">News</a></li>
+                        <li><a href="https://discord.gg/VnRrYmB9kU">Support</a></li>
+                    </ul>
+                    <a class="login" href="">Connexion</a>
+                </div>
+                <div class="container-mobile">
+                    <div class="icon">
+                        <img src="./assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <div class="dropdown">
+                        <button class="menu" onclick="functionMenu()"><i class="fal fa-bars"></i></button>
+                        <div id="menuDrop" class="drop-content">
+                            <a href="./accueil">Accueil</a>
+                            <a href="./news">News</a>
+                            <a href="https://discord.gg/VnRrYmB9kU">Support</a>
+                            <a href="">Connexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section forum">
+            <div class="container">
+                <h2>Forum</h2>
+                <div class="forum-content">
+                    <div class="forum-mail">
+                        <span class="user">Syrnaxx <span class="date">Aujourd’hui à 16:27</span></span>
+                        <p class="messages">
+                            Bonjour je suis un test<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section footer">
+            <div class="container">
+                <p class="claim-left">© Hyderium | 2021 <a href='./mentions-legales'>Mentions légales</a></p>
+                <p class="claim-right">Développé par <a>Syrnaxx</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function functionMenu() {
+            document.getElementById("menuDrop").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }       
+    </script>
+
+</body>
+
+</html>
