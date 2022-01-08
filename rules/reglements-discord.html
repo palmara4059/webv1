@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Hyderium - PvP/Factions</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="../assets/css/rules.css" rel="stylesheet" />
+    <script src="../assets/js/discord-api.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/hyderium.png">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scrollbar" id="scrollp">
+        <div class="section header">
+            <div class="header">
+                <div class="container">
+                    <div class="icon">
+                        <img src="../assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <ul>
+                        <li><a href="./accueil">Accueil</a></li>
+                        <li><a href="./news">News</a></li>
+                        <li><a href="https://discord.gg/VnRrYmB9kU">Support</a></li>
+                    </ul>
+                    <a class="login" href="./login">Connexion</a>
+                </div>
+                <div class="container-mobile">
+                    <div class="icon">
+                        <img src="../assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <div class="dropdown">
+                        <button class="menu" onclick="functionMenu()"><i class="fal fa-bars"></i></button>
+                        <div id="menuDrop" class="drop-content">
+                            <a href="./accueil">Accueil</a>
+                            <a href="./news">News</a>
+                            <a href="https://discord.gg/VnRrYmB9kU">Support</a>
+                            <a href="./login">Connexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mentions">
+            <div class="container">
+                <div class="content">
+                    <a href="./reglements-discord"><button class="active">Règlement Discord</button></a>
+                    <a href="./reglements-minecraft"><button>Règlement Minecraft</button></a>
+                </div>
+                <div class="pages">
+                    <h3>Règlement du Discord</h3>
+                    <p>
+                        📍Bienvenue sur Hyderium.<br><br>
+                        Au sein de celui-ci, nous vous demandons de suivre le règlement instauré ci dessous.<br><br>
+
+                        tout d'abord nous vous Informations que ce règlement est non exhaustif,<br>
+                        c'est-à-dire que si nous estimons nécessaire de vous sanctionner pour un comportement qui est
+                        déplacer et qui est non stipulée dans ce règlement,<br>
+                        nous nous réservons le droit de vous sanctionner.<br><br>
+
+
+                        • Comme cité ci-dessus, le respect et primordial et c'est la première règle qu’il faut adopter
+                        face à tous les utilisateurs,<br>
+                        Vous devez aussi garder un langage correct même si on vous provoque.<br><br>
+
+                        • Il vous est demandé de respecter le thème de chaque salon,<br>
+                        qu’il soit écrit comme vocal.<br>
+                        Vous devez également prendre en compte les modèles quand ceux-ci vous sont demandés. Nous vous
+                        invitons donc à lire les messages épinglés.<br><br>
+
+                        • Les contenus pornographiques, xénophobes, racistes, discriminatoires, homophobes… sont
+                        strictement interdits.<br><br>
+
+                        • Vos pseudos et photos de profil doivent être en accord avec le règlement également.<br>
+                        Nous vous conseillons d'avoir votre pseudo Minecraft.<br>
+                        Par conséquent l’usurpation de grade ou d’identité est interdite.<br><br>
+
+                        • Vos profils ne doivent en aucun cas être confondu avec celui d'un membre du staff.<br><br>
+
+                        • La publicité interdit sur l’ensemble du Discord si vous recevez un mp avec une pub merci
+                        d'informer l'équipe de modération.<br><br>
+
+                        <u><b>Les salons écrits :</b></u><br>
+
+                        • Le spam, flood, la mauvaise utilisation des majuscules et interdit.<br><br>
+
+                        • La provocation et l'acharnement envers un membre ou le fait d’engendrer de telles situations
+                        sont passibles d’une sanction voir une expulsion définitive du serveur Discord.<br><br>
+
+                        • Mentionner un membre du staff pour un quelconque problème qui n'en vaut pas la peine et
+                        interdit.<br><br>
+
+                        • L’utilisation de “ghost ping” est interdit.<br><br>
+
+                        • L’utilisation de soundboard dans le but de troll ou de nuire aux autres utilisateurs est
+                        interdit.<br><br>
+
+                        • Le flood et le spam vocal sont également interdits et sanctionnable d'un mute
+                        permanent.<br><br>
+
+                        • Il est strictement interdit d'enregistrer toute conversation audio avec qui que ce soit sans
+                        le consentement des personnes présentes,<br>
+                        cela constitue une atteinte à la vie privée d'autrui punissables par la justice.<br><br>
+
+                        Cordialement,<br>
+                        l'administration d'Hyderium.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section footer">
+            <div class="container">
+                <p class="claim-left">© Hyderium | 2021 <a href='./mentions-legales'>Mentions légales</a></p>
+                <p class="claim-right">Développé par <a>Syrnaxx</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function functionMenu() {
+            document.getElementById("menuDrop").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }       
+    </script>
+
+</body>
+
+</html>

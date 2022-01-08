@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Hyderium - PvP/Factions</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="../assets/css/rules.css" rel="stylesheet" />
+    <script src="../assets/js/discord-api.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/hyderium.png">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="scrollbar" id="scrollp">
+        <div class="section header">
+            <div class="header">
+                <div class="container">
+                    <div class="icon">
+                        <img src="../assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <ul>
+                        <li><a href="./accueil">Accueil</a></li>
+                        <li><a href="./news">News</a></li>
+                        <li><a href="https://discord.gg/VnRrYmB9kU">Support</a></li>
+                    </ul>
+                    <a class="login" href="./login">Connexion</a>
+                </div>
+                <div class="container-mobile">
+                    <div class="icon">
+                        <img src="../assets/img/hyderium.png" alt="">
+                        <span>Hyderium</span>
+                    </div>
+                    <div class="dropdown">
+                        <button class="menu" onclick="functionMenu()"><i class="fal fa-bars"></i></button>
+                        <div id="menuDrop" class="drop-content">
+                            <a href="./accueil">Accueil</a>
+                            <a href="./news">News</a>
+                            <a href="https://discord.gg/VnRrYmB9kU">Support</a>
+                            <a href="./login">Connexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mentions">
+            <div class="container">
+                <div class="content">
+                    <a href="./reglements-discord"><button>Règlement Discord</button></a>
+                    <a href="./reglements-minecraft"><button class="active">Règlement Minecraft</button></a>
+                </div>
+                <div class="pages">
+                    <h3>Règlement Minecraft</h3>
+                    📍Bienvenue sur Hyderium !<br><br>
+
+Nous vous prions de lire attentivement l’entièreté du règlement ci-dessous :<br>
+nous considérons que tout joueur se connectant à notre serveur a pris connaissance de ce règlement et accepte d’être sanctionné si celui-ci enfreint quelconque règle.<br><br>
+
+Nous nous gardons le droit de modifier le règlement à tout moment.<br> 
+C’est pour cela que vous devez constamment vous tenir informé de celui-ci.<br><br>
+
+<u><b>I. GÉNÉRALITÉS :</u></b><br>
+
+Hyderium est un serveur minecraft multijoueur accessible uniquement avec un compte Minecraft Premium,<br> qui peut être suspendu à tout moment si cela est jugé nécessaire par notre équipe.<br>
+
+Les utilisateurs sont priés d’adopter un bon comportement sur tous les serveurs,<br>
+ainsi qu’en toutes circonstances (qui ne sont pas forcément citées ci-dessous).<br>
+
+Tout utilisateur parlant dans les tchats des différents serveurs doit faire un minimum attention à son orthographe,<br> 
+cela permet d’avoir des échanges corrects avec les autres joueurs.<br><br>
+
+⚠️ Attention, la dyslexie n’est pas sanctionnée.⚠️<br><br>
+
+Tout joueur rejoignant le serveur est tenu seul responsable de son compte (qu'il soit titulaire officiel ou non).<br><br>
+
+Si un membre du staff est injurieux, vulgaire, violent ou abuse de ses pouvoirs de membres du staff avec des joueurs,<br>
+il est nécessaire de contacter les responsables du/des pôle(s) concerné(s) via l'équipe de modération où par <br>
+l'email suivante : hyderium.off@gmail.com<br><br>
+
+
+Le serveur étant situé sur le territoire français,<br> 
+il est donc soumis aux réglementations et législations françaises.<br>
+
+
+Cette liste n’est pas exhaustive :<br>
+une sanction peut être appliquée (même si le justificatif de cette sanction n’apparaît pas dans cette liste) si votre comportement,<br> 
+votre pseudo ou que vos actions sont déplacés et non conformes à la réglementation du serveur.<br><br>
+
+<u><b>LE TCHAT :</u></b><br>
+Les interdictions sur le serveur Minecraft :<br>
+• les insultes, envers un autre joueur, un membre du staff ou le serveur en général,<br><br>
+
+
+• le flood, consistant à saturer le tchat de caractères et caractères incompréhensibles (“nonnnnnnnn”, "zke8f9febfod02zb", l’utilisation de “!!!!!!!!!!!, ?????????”),<br><br>
+
+
+• le spam, c’est-à-dire renvoyer le même message plusieurs fois en moins de 3 à 4 minutes (vous n’aurez pas plus de réponses en spammant les autres joueurs),<br><br>
+
+
+• la provocation, vis-à-vis de joueurs ou de membres du staff (toute forme de rabaissement, moqueries, opposition systématique, etc), dans le but de nuire intellectuellement à un autre joueur, quel que soit l’objectif recherché.<br><br>
+
+• l’écriture de messages types “lag” (cela inclut aussi "ça lag !!!", “ça bug”, ”lag serveur”, etc).<br><br>
+
+• la publicité ("Le nom de ma chaine Youtube est ****** !”, "mon insta, Tweeter,  snap, discord, etc..."). Cependant, la publicité pour une faction est tolérée, du moment qu’elle ne contient aucun lien,<br><br>
+
+• la discrimination : racisme, sexisme, homophobie, transphobie, etc...<br><br>
+
+• accuser un joueur ou un membre du staff sans preuve,<br><br>
+
+• l’usurpation d'identité dans le tchat (que ce soit un membre du staff où autre),<br><br>
+
+• les menaces de DDOS/DOX ou autre technique de hacking, réelle ou non sera banni,<br><br>
+
+• les incitations à changer ou se déconnecter des serveurs sont interdites (“Je give de stuff sur serveur ##### !”).<br><br>
+
+• toute action volontaire ou incitation pouvant provoquer un ralentissement ou un crash de serveur (commandes, utilisation d'items bugs, etc.),<br><br>
+
+• la promotion de cheats où de dupli,<br><br>
+
+• la diffusion d’informations personnelles, même fausses.<br><br>
+
+<u><b>EN PVP/FACTIONS</u></b><br>
+Sont interdits sur le serveur :<br>
+
+• les factions qui portent des noms irrespectueux (propos sexuels, discriminatoires, offensants, noms de marques, maladies, promesses "on vous donnes du stuff", etc.),<br><br>
+
+• le Tp-Kill (téléporter un joueur dans un piège afin qu’il y meurt ou le combattre sans son autorisation après une téléportation). 
+Le premier joueur attaquant l’autre dans le but de le tuer sera sanctionné. 
+Une attaque après une téléportation est considérée comme un Tp-Kill si au moins 2 coups sont portés après les 10 secondes du tp ou que le joueur est tué.<br> 
+Toute personne participant à la construction du piège ou du combat sera également sanctionnée. 
+
+Les Tp-Kills ne sont non remboursables ! Vous êtes ainsi responsable des téléportations que vous effectuez !<br><br>
+
+• le back-safezone et la déconnexion en combat  (un déco combat via une commande, retour en zone sans pvp, etc.). Seule une preuve vidéo peut témoigner d’un crash à condition de pouvoir y voir le rapport de crash,<br><br>
+
+• deux AP maximum par faction et par serveur (si cela n’est pas respecté, un panneau sera posé et s’il n’y a pas de changement, l’AP sera unclaim au bout de 48 heures !),<br><br>
+
+• les withers utilisés sur des avant-postes,<br><br>
+
+• les constructions à l’image de QR code redirigeant sur n’importe quel lien,<br><br>
+
+• l’utilisation de fermes à AFK et de machines anti-AFK. En cas de non-réponse à un membre du staff qui vous interpelle, votre farm et vos ressources seront supprimées et votre inventaire vidé sans retour possible,<br><br>
+
+• l’utilisation de bugs influençant l’expérience de jeu (duplication, XP glitch, etc.), ainsi que la connaissance de bugs non report,<br><br>
+
+• toute technique pouvant entraîner un crash d’autres joueurs afin de leur nuire,<br><br>
+
+• le Stream Hack (tout comportement ou toute action visant à nuire à un joueur qui se trouve en stream twitch où youtube),<br><br>
+
+• l'échange de biens/services/argents InGame , l'argent IRL, etc...<br><br>
+
+• usurper/voler un nom de faction (preuve obligatoire "un screen vous sera demander lorsque vous contacterez le staff"),<br><br>
+
+• publicité contenant un lien dans la description de faction ou dans les mailbox<br><br>
+
+• toute perturbation ou manquement au règlement d’un évent/d’une quête,<br><br>
+
+• les doubles comptes durant un bannissement, mute, etc...<br><br>
+
+• les canons dans les maisons de faction,<br><br>
+
+• casser la dernière couche de bedrock afin d'avoir un accès direct au void,<br><br>
+
+• les bases et les coffres impillables et seront détruites après avertissement.<br><br>
+
+• Les factions peuvent comporter au maximum 50 membres).<br><br>
+
+
+Cordialement,<br>
+l'administration d'Hyderium.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="section footer">
+            <div class="container">
+                <p class="claim-left">© Hyderium | 2021 <a href='./mentions-legales'>Mentions légales</a></p>
+                <p class="claim-right">Développé par <a>Syrnaxx</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function functionMenu() {
+            document.getElementById("menuDrop").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }       
+    </script>
+
+</body>
+
+</html>
