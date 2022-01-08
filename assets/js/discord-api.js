@@ -6,7 +6,7 @@ function discordAPI(el) {
         mode: 'cors',
         cache: 'reload'
     }
-    fetch('https://discord.com/api/guilds/865875898757677077/widget.json', init).then(function (response) {
+    fetch('https://discord.com/api/guilds/929116205674016768/widget.json', init).then(function (response) {
         if (response.status != 200) {
             console.log("it didn't work" + response.status);
             return
