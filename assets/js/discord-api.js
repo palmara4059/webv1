@@ -51,3 +51,4 @@ class WidgetDiscord {
         return data
     }
 }
+
