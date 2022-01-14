@@ -1,5 +1,5 @@
-let template = `<div style="font-size:1em">{{onlineUsers}}</div>`
-
+let template = `<div style="font-size:1em">{{onlineUsers}} </div></div>`
+  
 function discordAPI(el) {
     const init = {
         method: 'GET',
@@ -12,19 +12,18 @@ function discordAPI(el) {
             return
         }
         response.json().then(function (data) {
-          
-
             new WidgetDiscord(data,"#widgetDiscord");
-
         })
     })
         .catch(function (err) {
             console.log('fetch error: ' + err)
         })
 }
+
 discordAPI()
 
 class WidgetDiscord {
+
     constructor(data, el) {
         this.template = template
         this.channels = data.channels;
@@ -40,6 +39,7 @@ class WidgetDiscord {
         this.template = this.tmplReplace(this.template);
         this.el.innerHTML = this.template;
     }
+    // remplacer des parametres dans un template
     tmplReplace(data) {
         data = data.replaceAll(/\{\{\s*(\w+)\s*\}\}/g, '{{$1}}');
         for (let propriete in this) {
@@ -50,5 +50,5 @@ class WidgetDiscord {
         }
         return data
     }
-}
 
+}
