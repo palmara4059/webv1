@@ -35,7 +35,7 @@ const firebaseConfig = {
   
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${timestamp.options}`,
+    date: `${timestamp.toLocaleDateString(undefined, options)}`,
     /*titre: titre,*/
     msg: message,
   });
