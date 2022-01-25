@@ -23,10 +23,12 @@ function postChat(e) {
   const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
 /*console.log(event.toLocaleDateString(undefined, options));*/
 
+  const chatImage = document.getElementById("chat-img");
   const chatTitre = document.getElementById("chat-titre");
   const chatArticle = document.getElementById("chat-article");
   const chatTxt = document.getElementById("chat-txt");
   const chatName = document.getElementById("username");
+  const image = chatImage.value;
   const article = chatArticle.value;
   const titre = chatTitre.value;
   const message = chatTxt.value;
@@ -35,6 +37,7 @@ function postChat(e) {
   chatTxt.value = "";
   db.ref("messages/" + timestamp).set({
     usr: username,
+    img: image,
     date: `${timestamp.toLocaleDateString(undefined, options)}`,
     article: article,
     titre: titre,
