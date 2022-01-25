@@ -21,6 +21,8 @@ const firebaseConfig = {
   
   /*const timestamp = Date();*/
   const timestamp = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+    
   
   const chatTxt = document.getElementById("chat-txt");
   /*const chatTitre = document.getElementById("chat-titre");*/
@@ -33,7 +35,7 @@ const firebaseConfig = {
   
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${timestamp.toLocaleDateString()} à ${timestamp.toLocaleTimeString()}`,
+    date: `${timestamp.options}`,
     /*titre: titre,*/
     msg: message,
   });
