@@ -12,9 +12,6 @@ const firebaseConfig = {
   const db = firebase.database();
   
   
-  /*const username = prompt("What's your name?");*/
-  
-  
   document.getElementById("send-message").addEventListener("submit", postChat);
   function postChat(e) {
   e.preventDefault();
@@ -22,32 +19,18 @@ const firebaseConfig = {
   const timestamp = new Date();
   const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
     
- /*   const birthday = new Date();
-const date1 = birthday.getDate();
-    
-    const moonLanding = new Date();
-
-console.log(moonLanding.getFullYear());
-    console.log(event.toDateString());
-
-  const event = new Date();
-const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
-
-console.log(event.toLocaleDateString(undefined, options));*/
-
+    const datix = timestamp.options;
     
     
   const chatTxt = document.getElementById("chat-txt");
-  /*const chatTitre = document.getElementById("chat-titre");*/
   const chatName = document.getElementById("username");
   const message = chatTxt.value;
-  /*const titre = chatTitre.value;*/
   const username = chatName.value;
   chatTxt.value = "";
 
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${timestamp.toLocaleDateString(undefined, options))}`,
+    date: `${datix}`,
     /*titre: titre,*/
     msg: message,
   });
