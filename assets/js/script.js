@@ -17,9 +17,9 @@ const firebaseConfig = {
   e.preventDefault();
   
   const timestamp = new Date();
-  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+  /*const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
     
-    const datix = timestamp.options;
+    const datix = timestamp.options;*/
     
     
   const chatTxt = document.getElementById("chat-txt");
