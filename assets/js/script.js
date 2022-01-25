@@ -20,6 +20,7 @@ const firebaseConfig = {
   e.preventDefault();
   
   const timestamp = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
     
  /*   const birthday = new Date();
 const date1 = birthday.getDate();
@@ -46,7 +47,7 @@ console.log(event.toLocaleDateString(undefined, options));*/
 
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${timestamp.toLocaleDateString()} à ${timestamp.toLocaleTimeString()}`,
+    date: `${timestamp.toLocaleDateString(undefined, options))}`,
     /*titre: titre,*/
     msg: message,
   });
