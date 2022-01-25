@@ -19,9 +19,23 @@ const firebaseConfig = {
   function postChat(e) {
   e.preventDefault();
   
-  /*const timestamp = Date();*/
   const timestamp = new Date();
-  
+    
+ /*   const birthday = new Date();
+const date1 = birthday.getDate();
+    
+    const moonLanding = new Date();
+
+console.log(moonLanding.getFullYear());
+    console.log(event.toDateString());
+
+  const event = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+
+console.log(event.toLocaleDateString(undefined, options));*/
+
+    
+    
   const chatTxt = document.getElementById("chat-txt");
   /*const chatTitre = document.getElementById("chat-titre");*/
   const chatName = document.getElementById("username");
