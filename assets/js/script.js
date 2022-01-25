@@ -30,7 +30,7 @@ const firebaseConfig = {
 
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${datix}`,
+    date: `${timestamp}`,
     /*titre: titre,*/
     msg: message,
   });
