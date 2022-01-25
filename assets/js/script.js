@@ -20,6 +20,8 @@ function postChat(e) {
 
   /*const timestamp = Date();*/
   const timestamp = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+/*console.log(event.toLocaleDateString(undefined, options));*/
 
   const chatTitre = document.getElementById("chat-titre");
   const chatArticle = document.getElementById("chat-article");
@@ -33,7 +35,7 @@ function postChat(e) {
   chatTxt.value = "";
   db.ref("messages/" + timestamp).set({
     usr: username,
-    date: `${timestamp.toLocaleDateString()} à ${timestamp.toLocaleTimeString()}`,
+    date: `${timestamp.toLocaleDateString(undefined, options)}`,
     article: article,
     titre: titre,
     msg: message,
